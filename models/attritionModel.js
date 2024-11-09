@@ -1,0 +1,42 @@
+import mongoose from "mongoose";
+
+const attriationSchema = new mongoose.Schema({
+  age: Number,
+  Attrition: String,
+  businessTravel: String,
+  dailyRate: Number,
+  department: String,
+  distanceFromHome: Number,
+  education: Number,
+  educationField: String,
+  employeeCount: Number,
+  employeeNumber: Number,
+  environmentSatisfaction: Number,
+  gender: String,
+  hourlyRate: Number,
+  jobInvolvement: Number,
+  jobLevel: Number,
+  jobRole: String,
+  jobSatisfaction: Number,
+  maritalStatus: String,
+  monthlyIncome: Number,
+  monthlyRate: Number,
+  numCompaniesWorked: Number,
+  over18: String,
+  overTime: String,
+  percentSalaryHike: Number,
+  performanceRating: Number,
+  relationshipSatisfaction: Number,
+  standardHours: Number,
+  stockOptionLevel: Number,
+  totalWorkingYears: Number,
+  trainingTimesLastYear: Number,
+  workLifeBalance: Number,
+  yearsAtCompany: Number,
+  yearsInCurrentRole: Number,
+  yearsSinceLastPromotion: Number,
+  yearsWithCurrentManager: Number,
+});
+
+const Attrition = mongoose.model("Attrition", attriationSchema);
+export default Attrition;
